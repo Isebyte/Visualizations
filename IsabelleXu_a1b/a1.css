@@ -1,0 +1,43 @@
+body {
+  padding: 20px;
+
+}
+
+#lineX {
+  stroke-width: 2px;
+  stroke: rgb(255, 196, 40);
+  fill: none;
+  transform: translateY(200px) scale(1,-1);
+}
+
+#lineY{
+  stroke-width: 2px;
+  stroke: rgb(133, 228, 75);
+  fill: none;
+  transform: translateY(200px) scale(1,-1);
+}
+
+#areaX {
+  stroke-width: 2px;
+  stroke: rgb(255, 196, 40);
+  fill: rgb(255, 196, 40);
+  transform: translateY(200px) scale(1,-1);
+}
+
+#areaY {
+  stroke-width: 2px;
+  stroke: rgb(133, 228, 75);
+  fill:rgb(133, 228, 75);
+  transform: translateY(200px) scale(1,-1);
+}
+
+.scatter{
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  transform:  scale(1,-1);
+}
+
+circle {
+  fill: rgb(155, 65, 218);
+}

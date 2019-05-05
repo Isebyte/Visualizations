@@ -1,0 +1,61 @@
+body {
+  padding: 20px;
+
+}
+
+.barChartX {
+  width: 300px;
+  height:275px;
+  fill: rgb(255, 116, 116);
+}
+
+.barChartY {
+  width: 300px;
+  height:275px;
+  fill: rgb(48, 180, 228);
+}
+
+.lineChart {
+  width: 250px;
+  height: 300px;
+
+}
+
+#lineX {
+  stroke-width: 3px;
+  stroke: rgb(255, 196, 40);
+  fill: none;
+  transform: translateY(370px) scale(1,-1);
+}
+
+.lineY{
+  stroke-width: 3px;
+  stroke: rgb(133, 228, 75);
+  fill: none;
+  transform: translateY(370px) scale(1,-1);
+}
+
+#areaX {
+  stroke-width: 3px;
+  stroke: rgb(255, 196, 40);
+  fill: rgb(255, 196, 40);
+  transform: translateY(370px) scale(1,-1);
+}
+
+#areaY {
+  stroke-width: 3px;
+  stroke: rgb(133, 228, 75);
+  fill:rgb(133, 228, 75);
+  transform: translateY(370px) scale(1,-1);
+}
+
+.scatter{
+  width: 400px;
+  height: 400px;
+  border: 2px solid black;
+  transform:  scale(1,-1);
+}
+
+circle {
+  fill: rgb(155, 65, 218);
+}

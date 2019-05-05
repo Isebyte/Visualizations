@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Trykker'>
+    <link rel="stylesheet" href="index.css">
+    <script src="js/d3.min.js"></script>
+    <script src="js/d3-fetch.min.js"></script>
+    <title>Word Analysis for English Fairy Tales</title>
+</head>
+<body>
+    <h1>Word Analysis for English Fairy Tales</h1>
+    <p class="info">Name: Isabelle Xu; E-Mail: isabelle.xu@wustl.edu; UID: isabelle.xu</p><hr>
+    <p>
+        This is a visualization on the relationship each word, taken from a fairy tale, has with four common
+        topics and schemas: pride, humility, peace, and violence. Please note that it may take a moment for the
+        data to load. Thank you for your patience!
+    </p>
+    <div id="loader"></div>
+    <div id="content">
+        <div class="row" id="storySelect">
+            <label id="selectorLabel" for="selector">&nbsp&nbsp&nbspSelect a story: &nbsp</label>
+            <select id="selector"></select>
+        </div><br>
+        <div class="row">
+            <div class="col-6" id="scatterMain">
+                <p>*The numbers on the axes represent their categorical scores. Circle size represents that word's frequency.</p>
+            </div>
+            <div class="col-4" >
+                <h3>Theme Overview:</h3><br>
+                <div id="piechart"></div>
+                <div class="legend">
+                    <h5>Legend</h5>
+                    <div class="legend4"></div>
+                </div>
+                <div id="stats">
+                    <h4>Story Stats:</h4>
+                    <span id="humility"></span><br>
+                    <span id="pride"></span><br>
+                    <span id="peace"></span><br>
+                    <span id="violence"></span><br><br>
+                    <h4>This story seems to heavily lean towards a theme of:</h4>
+                    <h1 id="overall"></h1>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/d3-scale-chromatic.min.js"></script>
+    <script src="js/d3-tip.js"></script>
+    <script src="js/scatterplotMain.js"></script>
+    <script src="js/pie.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

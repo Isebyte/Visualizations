@@ -1,0 +1,81 @@
+body {
+    padding: 35px;
+    font-family: 'Trykker', serif;
+    color: #ff7657;
+    background-color: #fcf9ed;
+}
+/*Color Theme: #fcf9ed, #ff7657, #ffba5a, #5893d4 */
+
+#content {
+    display: none;
+}
+
+#selector {
+    width: 50%;
+}
+
+#selectorLabel {
+    font-size: 24px;
+}
+
+#scatterMain {
+    padding: 25px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+
+/*Referenced from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader5*/
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    margin: -75px 0 0 -75px;
+    border: 8px solid #ffba5a;
+    border-radius: 50%;
+    border-top: 8px solid #ff7657;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 }
+    to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+    from{ bottom:-100px; opacity:0 }
+    to{ bottom:0; opacity:1 }
+}
+
+/*Referenced from http://bl.ocks.org/davegotz/bd54b56723c154d25eedde6504d30ad7*/
+.d3-tip {
+    line-height: 1;
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+}

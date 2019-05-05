@@ -1,0 +1,160 @@
+<!--
+  CSE457 Assignment 1A
+  Isabelle Xu
+  isabelle.xu@wustl.edu
+  isabelle.xu (451246)
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="a1.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <title>CSE 457A Assignment 1 - Part A</title>
+</head>
+
+<body>
+  <h1>CSE 457A Assignment 1</h1>
+  <h2>By Isabelle Xu (isablle.xu 451245)</h2><br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3>Bar Chart - X</h3>
+        <svg class="barChartX">
+          <rect width="120" height="24"></rect>
+          <rect width="168" height="24" y="25"></rect>
+          <rect width="288" height="24" y="50"></rect>
+          <rect width="96" height="24" y="75"></rect>
+          <rect width="144" height="24" y="100"></rect>
+          <rect width="336" height="24" y="125"></rect>
+          <rect width="264" height="24" y="150"></rect>
+          <rect width="216" height="24" y="175"></rect>
+          <rect width="312" height="24" y="200"></rect>
+          <rect width="192" height="24" y="225"></rect>
+          <rect width="240" height="24" y="250"></rect>
+        </svg>
+      </div>
+      <div class="col">
+        <h3>Bar Chart - Y</h3>
+        <svg class="barChartY">
+          <rect width="136.32" height="24"></rect>
+          <rect width="115.68" height="24" y="25"></rect>
+          <rect width="260.16" height="24" y="50"></rect>
+          <rect width="102.24" height="24" y="75"></rect>
+          <rect width="173.76" height="24" y="100"></rect>
+          <rect width="239.04" height="24" y="125"></rect>
+          <rect width="199.92" height="24" y="150"></rect>
+          <rect width="211.44" height="24" y="175"></rect>
+          <rect width="181.92" height="24" y="200"></rect>
+          <rect width="166.8" height="24" y="225"></rect>
+          <rect width="192.96" height="24" y="250"></rect>
+        </svg>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col"><br>
+        <h3>Line Chart - X</h3>
+        <svg class="lineChart">
+          <path id="lineX" d="
+               M0 240
+               L20 192
+               L40 312
+               L60 216
+               L80 264
+               L100 336
+               L120 144
+               L140 96
+               L160 288
+               L180 168
+               L200 120" />
+        </svg>
+      </div>
+      <div class="col"><br>
+        <h3>Line Chart - Y</h3>
+        <svg class="lineChart">
+          <line class="lineY" x1="0" y1="192.96" x2="20" y2="166.8" />
+          <line class="lineY" x1="20" y1="166.8" x2="40" y2="181.92" />
+          <line class="lineY" x1="40" y1="181.92" x2="60" y2="211.44" />
+          <line class="lineY" x1="60" y1="211.44" x2="80" y2="199.92" />
+          <line class="lineY" x1="80" y1="199.92" x2="100" y2="239.04" />
+          <line class="lineY" x1="100" y1="239.04" x2="120" y2="173.76" />
+          <line class="lineY" x1="120" y1="173.76" x2="140" y2="102.24" />
+          <line class="lineY" x1="140" y1="102.24" x2="160" y2="260.16" />
+          <line class="lineY" x1="160" y1="260.16" x2="180" y2="115.68" />
+          <line class="lineY" x1="180" y1="115.68" x2="200" y2="136.32" />
+        </svg>
+      </div>
+      <div class="row">
+        <div class="col"><br>
+          <h3>Area Chart - X</h3>
+          <svg class="lineChart">
+            <path id="areaX" d="
+                   M0 240
+                   L20 192
+                   L40 312
+                   L60 216
+                   L80 264
+                   L100 336
+                   L120 144
+                   L140 96
+                   L160 288
+                   L180 168
+                   L200 120
+                   L200 0
+                   L0 0
+                   L0 240
+                   Z" />
+          </svg>
+        </div>
+        <div class="col"><br>
+          <h3>Area Chart - Y</h3>
+          <svg class="lineChart">
+            <path id="areaY" d="
+                   M0 192.96
+                   L20 166.8
+                   L40 181.92
+                   L60 211.44
+                   L80 199.92
+                   L100 239.04
+                   L120 173.76
+                   L140 102.24
+                   L160 260.16
+                   L180 115.68
+                   L200 136.32
+                   L200 0
+                   L0 0
+                   L0 192.96
+                   Z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col"><br>
+      <h3>Scatterplot</h3>
+      <svg class="scatter">
+        <circle cx="240" cy="192.96" r="10"></circle>
+        <circle cx="192" cy="166.8" r="10"></circle>
+        <circle cx="312" cy="181.92" r="10"></circle>
+        <circle cx="216" cy="211.44" r="10"></circle>
+        <circle cx="264" cy="199.92" r="10"></circle>
+        <circle cx="336" cy="239.04" r="10"></circle>
+        <circle cx="144" cy="173.76" r="10"></circle>
+        <circle cx="96" cy="102.24" r="10"></circle>
+        <circle cx="288" cy="260.16" r="10"></circle>
+        <circle cx="168" cy="115.68" r="10"></circle>
+        <circle cx="120" cy="136.32" r="10"></circle>
+      </svg>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>
